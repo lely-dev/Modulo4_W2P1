@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GetIMG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/29d9bcc801.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
 
-    <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container_top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img id="logo_top" src="asset/Pexels_logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,29 +45,41 @@
             </div>
         </nav>
 
-        <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="imput_search">
-            <button class="btn btn-outline-success" type="submit" id="btn_search">Search</button>
-        </form> -->
+        <div id="hero" class="row d-flex flex-column" >
+            <h1 class="col-6 text-white">The best free stock photos, royalty free images & videos shared by creators.</h1>
+            <div id="container_search" class="col-6 d-flex">
+                <div id="btn_photos_video">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropup
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Photos</a></li>
+                            <li><a class="dropdown-item" href="#">Video</a></li>
+                            <li><a class="dropdown-item" href="#">Action three</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <input class="form-control me-2 fw-semibold" type="search" placeholder="Search for free photos" aria-label="Search" id="imput_search">
+                <button class="btn" type="submit" id="btn_search"><i class="fa-solid fa-magnifying-glass" style="color:gray;"></i></button>
+                
+            </div>
+            
+            
+  
+
+        </div>
         
 
     </div>
 
-    <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="imput_search">
-        <button class="btn btn-outline-success" type="submit" id="btn_search">Search</button>
-    </form> -->
-
- 
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="imput_search">
-    <button class="btn btn-outline-success" type="submit" id="btn_search">Search</button>
+    
 
 
 
 
-
-
-    <div class="container-fluid" id="btn_search_animal">
+    <!-- BUTTON DOG AND CAT -->
+    <!-- <div class="container-fluid" id="btn_search_animal">
         <div class="row d-flex" style="text-align: center;">
             <div>Choose your weapon!</div>
             <div>
@@ -74,8 +87,13 @@
                 <button type="button" class="btn btn-secondary btn-lg" id="btn_cat">Cat</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
+
+    <!-- <div class="col-6 col-md-4" id="img_to_show">
+        <img src="" alt="img" class="card-img">
+        <i class="fa-regular fa-heart card-img-overlay"></i>
+    </div> -->
 
     <div class="container-fluid">
         <div class="row" id="container_picture"></div>

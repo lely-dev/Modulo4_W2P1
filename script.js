@@ -20,7 +20,8 @@ function showImg(json){
     json.photos.forEach(element => {
 
         let imgFind = element.src.medium;
-        imgContainer.innerHTML += '<div class="card d-flex col-md-3"><img src="'+imgFind+'" class="card-img" alt="..."><div class="card-img-overlay"><h5 class="card-title">Card title</h5></div></div>'
+        // imgContainer.innerHTML += '<div class="card d-flex col-md-3"><img src="'+imgFind+'" class="card-img" alt="..."><div class="card-img-overlay"><h5 class="card-title">Card title</h5></div></div>'
+        imgContainer.innerHTML += '<div class="col-6 col-md-4" id="img_to_show"><img src="'+imgFind+'" alt="img" class="card-img"></div>'
     });
 }
 
@@ -28,17 +29,17 @@ function showImg(json){
 // getData("cane");
 
 
-let dogBtn = document.getElementById("btn_dog");
-let catBtn = document.getElementById("btn_cat");
+// let dogBtn = document.getElementById("btn_dog");
+// let catBtn = document.getElementById("btn_cat");
 let searchBtn = document.getElementById("btn_search");
 
-dogBtn.addEventListener("click", () =>{
-    getData("dog");
-});
+// dogBtn.addEventListener("click", () =>{
+//     getData("dog");
+// });
 
-catBtn.addEventListener("click", () =>{
-    getData("cat");
-});
+// catBtn.addEventListener("click", () =>{
+//     getData("cat");
+// });
 
 searchBtn.addEventListener("click", () =>{
     let imput = document.getElementById("imput_search");
