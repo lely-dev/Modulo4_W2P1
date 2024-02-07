@@ -9,6 +9,8 @@
     justify-content: center;
 } */
 
+
+/* NAVBAR e HERO */
 .container_top{
     height: 500px;
     background-image: url("https://images.pexels.com/photos/16645547/pexels-photo-16645547.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000");
@@ -46,3 +48,36 @@
 #imput_search{
     border: none;
 }
+
+/* TABS */
+
+#tab_container {
+    padding: 30px 0;
+}
+
+#tab_container ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#tab_container ul li a{
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#tab_container ul li a:hover{
+    color: black;
+}
+
+#tab_container ul li a.active{
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+
+#tab_container ul li a.active:hover{
+    opacity: 0.9;
+}
+
