@@ -81,3 +81,15 @@
     opacity: 0.9;
 }
 
+
+
+/* CONTAINER CARD */
+
+
+#container_top_photos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
