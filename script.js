@@ -40,6 +40,7 @@ let searchBtn = document.getElementById("btn_search");
 searchBtn.addEventListener("click", () =>{
     
     getData(imput.value);
+    
 
 });
 
